@@ -5,28 +5,28 @@
 	<item name="debug_output" type="bool">true</item>
 
 	<!-- Property to read for ROM version -->
-	<string name="property_version">ro.omni.version</string>
+	<string name="property_version">lite.ota.delta</string>
 
 	<!-- Property to read for device identifier -->
-	<string name="property_device">ro.omni.device</string>
+	<string name="property_device">ro.lite.device</string>
 
 	<!-- %s is expanded to property_version value. .zip, .delta, .update, .sign extensions added when needed -->
-	<string name="filename_base">omni-%s</string>
+	<string name="filename_base">%s</string>
 
 	<!-- Path deltas are stored, relative to sdcard root -->
 	<string name="path_base">OpenDelta</string>
 
 	<!-- URL base to find .delta files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
-	<string name="url_base_delta">https://delta.omnirom.org/weeklies/%s/</string>
+	<string name="url_base_delta">https://sourceforge.net/projects/lite-os/files/%s/</string>
 
 	<!-- URL base to find .update and .sign files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
-	<string name="url_base_update">https://delta.omnirom.org/weeklies/%s/</string>
+	<string name="url_base_update">https://sourceforge.net/projects/lite-os/files/%s/download</string>
 
 	<!-- URL base to find the full zip files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
-	<string name="url_base_full">https://dl.omnirom.org/%s/</string>
+	<string name="url_base_full">https://sourceforge.net/projects/lite-os/files/%s/</string>
 
 	<!-- URL base to fetch all builds -->
-	<string name="url_base_json">https://dl.omnirom.org/json.php"</string>
+	<string name="url_base_json">https://raw.githubusercontent.com/lite-os/ota/8.1/json.php"</string>
 
 	<!-- Applies whole-file signature delta. Adds one extra delta step. Required if recovery verifies signatures -->
 	<item name="apply_signature" type="bool">true</item>
@@ -54,8 +54,8 @@
 		<item>i777</item>
 	</string-array>
 
-	<string name="official_version_tag">NIGHTLY</string>
-	<string name="weekly_version_tag">WEEKLY</string>
+	<string name="official_version_tag">OFFICIAL</string>
+	<string name="weekly_version_tag">OREO</string>
 	<string name="security_version_tag">SECURITY_RELEASE</string>
 
 	<string name="android_version">ro.build.version.release</string>
