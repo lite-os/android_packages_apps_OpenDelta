@@ -32,7 +32,8 @@
 			android:label="@string/title"
 			android:launchMode="singleInstance"
 			android:enabled="true"
-			android:theme="@style/Theme.OpenDelta" >
+			android:theme="@style/Theme.OpenDelta" 
+			android:icon="@drawable/ic_category_settings" >
 			<intent-filter android:priority="2147483647" >
 				<action android:name="com.android.settings.action.EXTRA_SETTINGS" />
 				<category android:name="android.intent.category.DEFAULT" />
